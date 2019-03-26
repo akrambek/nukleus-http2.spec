@@ -31,6 +31,7 @@ read [0x00]
 read [0..8] # authorization
 read ${core:string("http2#0")}
 read ${core:string("target#0")}
+read ${core:string("localhost:8080")}
 read ${http:headers()
            .item(":authority", "localhost:8080")
            .build()}

@@ -33,6 +33,7 @@ write [0x00]
 write ${routeAuthorization}
 write ${core:string("http2#0")}
 write ${core:string("target#0")}
+write [0x00]
 write ${http:headers()
             .item(":authority", "localhost:443")
             .build()}
